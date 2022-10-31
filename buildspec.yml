@@ -1,0 +1,69 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # install terraform binary
+      - curl -s -qL -o terraform_install.zip https://releases.hashicorp.com/terraform/1.1.3/terraform_1.1.3_linux_amd64.zip
+      - unzip terraform_install.zip -d /usr/bin/
+      - chmod +x /usr/bin/terraform
+    finally:
+      - terraform --version
+  pre_build:
+    commands:
+      - echo Entered into the pre_build phase...
+    finally:
+      - echo This always runs even if the login command fails
+  build:
+    commands:
+      - terraform --version
+      - terraform init 
+      - terraform plan
+      - terraform apply -auto-approve 
+      - echo "COMPLETED"
+artifacts:
+  files:
+    - appspec.yaml
+    - build/*
+
+
+
+# version: 0.2
+
+# phases:
+#   install:
+#     runtime-versions:
+#       python: 3.8
+#     commands:
+#       - echo "Installing dependencies..."
+#       - pip3 install -r requirements.txt -t lib
+#   build:
+#     commands:
+#       - echo "Zipping deployment package....."
+#       - cd lib
+#       - zip -r9 ../deployment_pkg1.zip .
+#       - zip -r9 ../deployment_pkg2.zip .
+#       - cd ..
+#       - zip -g deployment_pkg1.zip order_simulator.py
+#       - zip -g deployment_pkg2.zip order_processor.py
+
+#   post_build:
+#     commands:
+#       - echo "Creating order_simulator lambda function..."
+#     #   - aws lambda create-function --function-name order_simulator --zip-file fileb://deployment_pkg1.zip --runtime python3.8 --role arn:aws:iam::203978866841:role/Lambda-fullaccess --handler order_simulator.lambda_handler
+
+#       - echo "Creating order_proccessor lambda function..."
+#     #   - aws lambda create-function --function-name order_processor --zip-file fileb://deployment_pkg2.zip --runtime python3.8 --role arn:aws:iam::203978866841:role/Lambda-fullaccess --handler order_processor.lambda_handler
+
+#       - echo "Updating lambda function..."
+#       - aws lambda update-function-code --function-name order_simulator --zip-file fileb://deployment_pkg1.zip
+#       - aws lambda update-function-code --function-name order_processor --zip-file fileb://deployment_pkg2.zip
+
+#     #   - echo "Invoking lambda function..."
+#     #   - aws lambda invoke --function-name order_simulator --invocation-type Event input-test-event.json 
+#       - echo "*** DONE ***"
+#       - echo "Artifacts"
+# artifacts:
+#   files:
+#     - appspec.yaml
+#     - build/*

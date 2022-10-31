@@ -1,0 +1,18 @@
+// =============  Valid response ===================
+
+{ 
+ "order_number": 900,
+ "num_items": 2,
+ "price_per_item": 200.15,
+ "item_description": "Waterbottle: our most popular bottle, available in variety of colours to help brightenup anybodys gear."
+}
+
+
+// =============  Invalid response ===================
+
+{ 
+"order_number": 901,
+"num_items": 2,
+"price_per_item": "Boat Smart Watch",
+"item_description": "boAt's smart watch Enigma is a sleek fitness smartwatch loaded with features that truly makes it the smart watch of our times."
+}
