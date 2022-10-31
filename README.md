@@ -1,6 +1,6 @@
 # product-expo
-For clear understanding ,u check the product document which is shared here.
-Let us start building the infrastructure
+For clear understanding ,u can check the product document which is shared here.
+## Let us start building the infrastructure
 So Lets Start by installing terraform
 # Step 1 : 
 Install the terrafom.
