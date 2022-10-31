@@ -1,5 +1,5 @@
 # product-expo
-
+For clear understanding ,u check the product document which is shared here.
 Let us start building the infrastructure
 So Lets Start by installing terraform
 # Step 1 : 
