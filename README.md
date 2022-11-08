@@ -1,5 +1,5 @@
 Note : All the code files and documentation are provided in this repo.
-###### For clear understanding , visit the product documentaion which is shared here or u can visit https://amedeloitte-my.sharepoint.com/personal/pnirosha_deloitte_com/_layouts/15/onedrive.aspx?login_hint=pnirosha%40deloitte%2Ecom&FolderCTID=0x0120001FE62EDB963FA9428BBCF6A7CE04EA47&id=%2Fpersonal%2Fpnirosha%5Fdeloitte%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FFinalized%2Dproduct%2Ddoc%20%281%29%2Epdf&parent=%2Fpersonal%2Fpnirosha%5Fdeloitte%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files
+###### For clear understanding , visit the product documentaion which is shared here or u can visit https://amedeloitte-my.sharepoint.com/personal/pnirosha_deloitte_com/Documents/Microsoft%20Teams%20Chat%20Files/Finalized-product-doc%20(1).pdf
 # Step 1 :
 Install the terrafom. 
 
