@@ -668,11 +668,11 @@ Developers can be notified via email if their build fails It will be usefull whe
 
  
 
-So Finally, We completed the all the things that are in the below serverless architeture. 
+##### So Finally, We completed the all the things that are in the below serverless architeture. 
 
-So what are the usecases of it,  
+##### So what are the usecases of it,  
 
-## Use cases of Decoupled serverless architecture  
+##### Use cases of Decoupled serverless architecture  
 
  
 
@@ -689,3 +689,4 @@ The Engineering team at a company has raised an issue. Every time a developer co
 By creating an automated pipeline using AWS services that can achieve this. In addition, developers should be notified via email if their build fails. 
 
  
+### THANK U, HAVE A GREAT DAY
