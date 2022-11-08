@@ -1,9 +1,13 @@
 # product-expo
-For clear understanding ,u can check the product document which is shared here.
+For clear understanding ,u can visit the product documention which is shared here.
 ## Let us start building the infrastructure
 So Lets Start by installing terraform
 # Step 1 : 
 Install the terrafom.
+![image](https://user-images.githubusercontent.com/111974198/200486860-a40294d2-a23c-46fe-9891-84050d7f98fa.png)
+
+
+
 # Step 2 : 
 create a main.tf configuration file and add aws provider in it.We should never pass the any secrets and access key, so for that configure the aws credentials in locally. Open the terminal, go to the folder and open the config file and paste the access key and secret key like show below.Open the aws IAM Console -> click on users -> create a user and after that open security credentials, in that we can see our accesskey, and for secret key it will show only once, download it, then copy the scret and access key paste in terminal.
 # Step 3 : 
